@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## API Harry Potter
 
-## Getting Started
+Atividade: Desenvolvimento de Interface com Consumo de API de sua escolha
 
-First, run the development server:
+## Passos para Instalação
+1. No terminal do Vscode rode o comando abaixo:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+npx create-next-app@latest nome-do-projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ok to proceed? Y
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Select an example: 
+Typescript: No
+Use ESLint: Yes
+Use Tailwind CSS: No
+`src/` directory: Yes
+use App Router: Yes
+use Turbopack: Yes
+import alias (`@/*` by default): No
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Caso clonar o repositório, siga os passos abaixo:
 
-## Learn More
+   git clone https://github.com/JuliaMartins25/avaliativa-front.git   
+             
 
-To learn more about Next.js, take a look at the following resources:
+3. Instale as dependências:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Execute o projeto:
 
-## Deploy on Vercel
+   npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Utilização do Axios
+O axios é uma biblioteca JavaScript usada para fazer requisições HTTP de forma simples e eficiente. Ele é amplamente utilizado em projetos front-end e back-end para consumir APIs e lidar com dados.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Instale a biblioteca
+
+    npm install axios
+
+## Funcionalidades Implementadas
+
+- Listagem de personagens com informações detalhadas:
+  - Nome do personagem.
+  - Casa a que pertence.
+  - Patrono.
+  - Imagem do personagem.
+- Exibição de imagens dos personagens com tamanho ajustado e responsivo.
+- Mensagens de carregamento e erro:
+  - Exibe "Carregando personagens..." enquanto os dados são buscados.
+  - Exibe uma mensagem de erro caso a API não esteja acessível.
+- Design responsivo e estilizado com tema inspirado no universo mágico de Harry Potter.
+
+## Onde foi usado Copilot?
+
+O copilot foi usado para gerar um css no componente harryList de forma que a estilização combinasse com o tema de Harry Potter.
